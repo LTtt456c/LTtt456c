@@ -1,23 +1,19 @@
-<!-- 保存为 header.svg -->
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- 圆形渐变边框 -->
     <radialGradient id="grad" cx="50%" cy="50%" r="50%">
       <stop offset="0%"  stop-color="#764ba2"/>
       <stop offset="100%" stop-color="#667eea"/>
     </radialGradient>
+    <mask id="circle">
+      <circle cx="200" cy="200" r="98" fill="white"/>
+    </mask>
   </defs>
 
   <!-- 渐变圆环 -->
   <circle cx="200" cy="200" r="102" fill="url(#grad)"/>
 
-  <!-- 头像蒙版，保证只显示圆形区域 -->
-  <mask id="circle">
-    <circle cx="200" cy="200" r="98" fill="white"/>
-  </mask>
-
-  <!-- 实际头像 -->
-  <image xlink:href="https://youke1.picui.cn/s1/2025/11/13/6915424853271.jpg"
+  <!-- 头像（raw 地址） -->
+  <image xlink:href="https://raw.githubusercontent.com/LTtt456c/LTtt456c/main/f7e91b0b445d608852f2c892f09e8ea1.jpg"
          x="102" y="102" width="196" height="196"
          mask="url(#circle)"/>
 </svg>
